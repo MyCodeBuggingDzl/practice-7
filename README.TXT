@@ -10,3 +10,31 @@ VERSION or DATE:
 HOW TO START THIS PROJECT:
 AUTHORS:
 USER INSTRUCTIONS:
+
+
+p3 q4
+
+* @author (your name)
+ * @version (a version number or a date)
+ */
+public class MapTester
+{
+    // instance variables - replace the example below with your own
+    private HashMap<String, String> phonebook;
+
+    /**
+     * Constructor for objects of class MapTester
+     */
+    public MapTester()
+    {
+        phonebook = new HashMap<>();
+    }
+
+    public void enterNumber(String name, String number){
+        phonebook.put(name, number);
+    }
+    
+    public String lookupNumber(String name){
+        return phonebook.get(name);
+    }
+}
