@@ -38,7 +38,7 @@ public class randomTester
         responseList.add("no");
         responseList.add("maybe");
         
-        int index = generator.nextInt(3);
+        int index = generator.nextInt(responseList.size());
         return responseList.get(index);
     }
 }
